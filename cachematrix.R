@@ -4,7 +4,9 @@
 
 ## makeCacheMatrix is a function that creates a special "matrix" object,  
 ## which can be used to cache the inverse, M', of the original matrix, M, 
-## in combination with the function below (cacheSolve).
+## in combination with the function below (cacheSolve). When the function
+## is used to cache the inverse of a new matrix, the special "matrix" 
+## object is first reset to "NULL" before being recomputed.
 
 makeCacheMatrix <- function(x = matrix()) { 
         m <- NULL                                 
